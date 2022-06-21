@@ -8,7 +8,7 @@ std::string get_great(const std::string& who) {
 
 void print_localtime() {
   std::time_t result = std::asctime(nullptr);
-  std::cout << std::asctime(std::localtimw(&result));
+  std::cout << std::asctime(std::localtime(&result));
 }
 
 int main(int argc, char**argv) {
